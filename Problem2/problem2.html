@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="problem2.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <p>Tip Calculator</p>
+    <input type="number" oninput="calculateTip()" onchange="calculateTip()" id="totalBill"
+      placeholder="Enter Your Bill">
+    <label for="tipPercentage" style="display: flex; justify-content:space-between;">
+      <span>Tip:</span><input type="range" oninput="calculateTip()" onchange="calculateTip()" id="tipPercentage">
+      <span id="tipPercentageText">50%</span>
+    </label>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <p>Results</p>
+    <div class="result" id="result">
+      <h5 style="margin: 8px 0;display: flex; justify-content:space-between;">
+        <span>Tip amount</span>
+        <span style="font-size:  20px;">__.__</spam>
+      </h5>
+      <h5 style="margin: 8px 0;display: flex; justify-content:space-between;">
+        <span>Total Bill</span>
+        <span style="font-size:  20px;">__.__</spam>
+      </h5>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="problem2.js">
+</script>
+
+</html>
